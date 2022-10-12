@@ -12,7 +12,6 @@ cycler==0.11.0
 dill==0.3.5.1
 fonttools==4.37.3
 idna==3.4
--e git+ssh://git@github.com/kjell-ohlsson/python-intermediate-inflammation.git@ae3e251709dcf1f881e908ef8590ea872de9af35#egg=inflammation_analysis
 iniconfig==1.1.1
 isort==5.10.1
 kiwisolver==1.4.4
