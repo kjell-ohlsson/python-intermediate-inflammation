@@ -46,3 +46,15 @@ def test_daily_max(test_max, expected_max):
     from inflammation.models import daily_max
     npt.assert_array_equal(daily_max(np.array(test_max)), np.array(expected_max))
 
+""" Adding Nev's Tests for STD """
+def test_daily_std_integers():
+    """Test that mean function works for an array of positive integers."""
+    from inflammation.models import daily_std
+
+    test_input = np.array([[1, 2],
+                           [3, 4],
+                           [5, 6]])
+    test_result = np.array([1.63299, 1.63299])
+
+    # Need to use Numpy testing functions to compare arrays
+    npt.assert_allclose(daily_std(test_input), test_result, rtol=1e-4)
