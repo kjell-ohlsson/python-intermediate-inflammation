@@ -40,4 +40,4 @@ def test_daily_std():
     test_result = np.array([0.81649658, 1.63299316])
 
     # Need to use Numpy testing functions to compare arrays
-    npt.assert_array_equal(daily_std(test_input), test_result)
+    npt.assert_array_almost_equal(daily_std(test_input), test_result)
