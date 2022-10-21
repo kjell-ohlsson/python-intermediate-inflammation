@@ -56,5 +56,3 @@ def test_daily_std(test_std, expected_std):
     """Test standard deviation function works."""
     from inflammation.models import daily_std
     npt.assert_allclose(daily_std(np.array(test_std)), np.array(expected_std), rtol=1e-04)
-
-git
