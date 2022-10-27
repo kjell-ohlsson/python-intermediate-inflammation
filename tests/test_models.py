@@ -40,6 +40,7 @@ def test_daily_min(test_min, expected_min):
     [
         ([[7, 8], [9, 10], [11, 12]], [11, 12]),
         ([[1, 2], [3, 4], [5, 6]], [5, 6]),
+        ([[0, -5], [0, -4], [0, -2]], [0, -2])
     ])
 def test_daily_max(test_max, expected_max):
     """Test mean function works for array of zeroes and positive integers."""
