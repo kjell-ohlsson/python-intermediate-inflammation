@@ -47,3 +47,15 @@ def test_daily_max(test_max, expected_max):
     from inflammation.models import daily_max
     npt.assert_array_equal(daily_max(np.array(test_max)), np.array(expected_max))
 
+
+#New test for np.nan
+def test_daily_max_nan():
+    from inflammation.models import daily_max
+
+    test_input = np.array([[1, 2],
+                           [np.nan, 4],
+                           [5, np.nan]])
+    test_result = np.array([5, 4])
+
+    # Need to use Numpy testing functions to compare arrays
+    npt.assert_array_equal(daily_max(test_input), test_result)
