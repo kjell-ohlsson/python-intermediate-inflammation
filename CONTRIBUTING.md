@@ -9,5 +9,6 @@
 
 ## Approach
 
-* Create "<issue#>_dev" branch for each issue
-* Use PULL requests one at a time and merge them in
+* Create "<issue#>_dev" branch off develop for each issue
+* Use PULL requests one at a time and merge the issue branches back into develop
+* When all are done, merge develop back into main
