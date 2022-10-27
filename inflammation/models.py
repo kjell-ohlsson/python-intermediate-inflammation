@@ -35,7 +35,7 @@ def daily_max(data):
    patient across all days).
    :returns: An array of minimum values of measurements for each day.
    """
-    return np.max(data, axis=0)
+    return np.nanmax(data, axis=0)
 
 
 def daily_min(data):
